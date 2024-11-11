@@ -1,0 +1,15 @@
+<template>
+    <ul class="list-group">
+        <product-form-header></product-form-header>
+        <product-form-body :isEdit="isEdit"></product-form-body>
+    </ul>
+</template>
+
+<script setup>
+import ProductFormBody from './ProductFormBody.vue';
+import ProductFormHeader from './ProductFormHeader.vue';
+
+const props = defineProps({
+    isEdit: { type: Boolean, default: false },
+})
+</script>

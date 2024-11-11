@@ -1,0 +1,34 @@
+@import './base.css';
+
+* {
+  font-family: 'Montserrat';
+}
+
+#app {
+  max-width: 100%;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 2px;
+}
+
+@media (hover: hover) {
+}
+
+@media (max-width: 100%) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+

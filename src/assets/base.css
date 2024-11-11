@@ -1,0 +1,240 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-white);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-outline-info {
+  width: 85px; 
+  height: 40px;
+  border-color: #0d6b6e;
+  color: #0d6b6e;
+}
+
+.btn-sign {
+  background-color: #009499;
+  color:white;
+}
+
+.btn-log:hover {
+  background-color: #0d6b6e;
+  color: white;
+}
+
+
+.btn-sign:hover {
+  background-color: #0d6b6e;
+  color: white;
+}
+
+.btn-drop {
+  color: black;
+}
+
+.bg-image {
+  background-image: url('/src/assets/images/background.jpg');
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.btn-primary {
+  background-color: #009499;
+  border-color: #009499;
+  width: 250px;
+  height: 40px;
+}
+
+.btn-primary:hover {
+  background-color: #0d6b6e;
+  border-color: #0d6b6e;
+}
+
+.btn-outline-info:hover {
+  background-color: #0d6b6e;
+  color: white;
+}
+
+.prod a {
+  color: #0d6b6e;
+  margin-left: -55px;
+}
+
+.card-body h5 {
+  font-size: 16px;
+}
+
+.card-body p {
+  color: #0d6b6e;
+}
+
+.btn.btn-category {
+  --bs-btn-font-weight: 400;
+  --bs-btn-color: #404040;
+  --bs-btn-bg: var(--bs-white);
+  --bs-btn-border-color: #C2C2C2;
+  --bs-btn-hover-color: black;
+  --bs-btn-hover-bg: #0d6b6e;
+  --bs-btn-hover-border-color: #0d6b6e;
+  --bs-btn-focus-shadow-rgb: #0d6b6e;
+  --bs-btn-active-color: var(--bs-black);
+  --bs-btn-active-bg: #0d6b6e;
+  --bs-btn-active-border-color: #0d6b6e;  
+}
+
+.ulFooter1 li {
+  margin-left:-30px;
+}
+
+.copyright small {
+  margin-left: -100px;
+  padding-right: 45px;
+}
+
+.divDetail1 {
+  margin-top: 1px;
+  margin-left: 30px;
+}
+
+.divDetail2 {
+  margin-top: -262px;
+  margin-left: 30px;
+}
+
+.divDetail3 {
+  margin-top: -508px; 
+  margin-left: 465px;
+}
+
+.divDetail4 {
+  margin-top: -260px;
+  margin-left: 185px;
+}
+
+.productDetail {
+  margin-top: -530px;
+  margin-left: -60px;
+}
+
+.card-body ul {
+  margin-top: -40px;
+  margin-left: -30px;
+}
+
+.btn-detail {
+  background-color: #63cdc3;
+  border-color: #63cdc3;
+  width: 220px;
+  height: 40px;
+  color: white;
+}
+
+.btn-detail2 {
+  width: 220px;
+  height: 40px;
+}
+
+.carouselExample {
+  padding-left: -250px;
+}
+
+#listDetail {
+  display: flex;
+  margin-top: 10px;
+  gap: 50px;
+}
+
+#cardDetail p {
+  color: black;
+}
+
+.modal {
+  z-index: 1050 !important; 
+}
+.modal-backdrop {
+  z-index: 1040 !important;
+}
+
+.modal-dialog {
+  align-items: center;
+}
